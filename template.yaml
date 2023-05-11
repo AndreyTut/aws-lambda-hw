@@ -1,0 +1,32 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  aws-lambda-hw
+
+  Sample SAM Template for aws-lambda-hw
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 20
+    MemorySize: 128
+
+Resources:
+  NotificationUploadFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: HelloWorldFunction
+      Handler: helloworld.NotificationUploader::handleRequest
+      Runtime: java11
+      Role: arn:aws:iam::138371334384:role/sqs-sns-for-lambda-hw
+      Architectures:
+        - x86_64
+      MemorySize: 512
+      Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
+        Variables:
+          queueUrl: https://sqs:us-east-1:amazonaws:com/138371334384/-uploads-nitification-queue
+          topicArn: arn:aws:sns:us-east-1:138371334384:-upload-notification-topic
+          JAVA_TOOL_OPTIONS: -XX:+TieredCompilation -XX:TieredStopAtLevel=1 # More info about tiered compilation https://aws.amazon.com/blogs/compute/optimizing-aws-lambda-function-performance-for-java/
+      AutoPublishAlias: live
+      DeploymentPreference:
+        Type: AllAtOnce

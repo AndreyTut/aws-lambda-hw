@@ -1,0 +1,13 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: helloworld.NotificationUploader::handleRequest
+      CodeUri: s3://andrii-tutyk-my-lambda-packages/ba8f98d2331e9e7d0a6d77869ae35126
+      Runtime: java11
+      Architectures:
+      - x86_64
+    Metadata:
+      SamResourceId: Function

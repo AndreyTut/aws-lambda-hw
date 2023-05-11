@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e53c0b2-309e-4068-b47b-fafe175b3932" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OhBPNUkHAN5Fo6m2i8POD1gm6t" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/Andrii_Tutyk/IdeaProjects/aws-lambda-hw",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/HelloWorldFunction" />
+    </key>
+  </component>
+  <component name="RunManager" selected="AWS Lambda.[Remote] lambda-hw-uploads-batch-notifier">
+    <configuration type="aws.lambda" factoryName="Remote">
+      <option name="credentialProviderId" value="profile:AdminUser" />
+      <option name="regionId" value="us-east-1" />
+      <option name="functionName" value="aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" />
+      <option name="input" value="{}" />
+      <option name="inputIsFile" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="[Local] HelloWorldFunction" type="aws.lambda" factoryName="Local" nameIsGenerated="true">
+      <option name="credentialProviderId" value="profile:AdminUser" />
+      <option name="regionId" value="us-east-1" />
+      <option name="debugHost" value="localhost" />
+      <option name="architecture" />
+      <option name="environmentVariables">
+        <map />
+      </option>
+      <option name="handler" />
+      <option name="image" value="false" />
+      <option name="logicalFunctionName" value="HelloWorldFunction" />
+      <option name="memorySize" value="128" />
+      <option name="pathMappings">
+        <list />
+      </option>
+      <option name="platform" />
+      <option name="runtime" />
+      <option name="templateFile" value="$PROJECT_DIR$/template.yaml" />
+      <option name="timeout" value="300" />
+      <option name="useTemplate" value="true" />
+      <option name="input" value="{}" />
+      <option name="inputIsFile" value="false" />
+      <sam>
+        <option name="additionalBuildArgs" value="" />
+        <option name="additionalLocalArgs" value="" />
+        <option name="buildInContainer" value="false" />
+        <option name="dockerNetwork" value="" />
+        <option name="skipImagePull" value="false" />
+      </sam>
+      <method v="2" />
+    </configuration>
+    <configuration name="[Local] NotificationUploadFunction" type="aws.lambda" factoryName="Local" nameIsGenerated="true">
+      <option name="credentialProviderId" value="profile:AdminUser" />
+      <option name="regionId" value="us-east-1" />
+      <option name="debugHost" value="localhost" />
+      <option name="architecture" />
+      <option name="environmentVariables">
+        <map>
+          <entry key="JAVA_TOOL_OPTIONS" value="-XX:+TieredCompilation -XX:TieredStopAtLevel=1" />
+          <entry key="queueUrl" value="https://sqs:us-east-1:amazonaws:com/138371334384/-uploads-nitification-queue" />
+          <entry key="topicArn" value="arn:aws:sns:us-east-1:138371334384:-upload-notification-topic" />
+        </map>
+      </option>
+      <option name="handler" />
+      <option name="image" value="false" />
+      <option name="logicalFunctionName" value="NotificationUploadFunction" />
+      <option name="memorySize" value="128" />
+      <option name="pathMappings">
+        <list />
+      </option>
+      <option name="platform" />
+      <option name="runtime" />
+      <option name="templateFile" value="$PROJECT_DIR$/notification-uploader-template.yaml" />
+      <option name="timeout" value="300" />
+      <option name="useTemplate" value="true" />
+      <option name="input" value="{}" />
+      <option name="inputIsFile" value="false" />
+      <sam>
+        <option name="additionalBuildArgs" value="" />
+        <option name="additionalLocalArgs" value="" />
+        <option name="buildInContainer" value="false" />
+        <option name="dockerNetwork" value="" />
+        <option name="skipImagePull" value="false" />
+      </sam>
+      <method v="2" />
+    </configuration>
+    <configuration name="[Remote] aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" type="aws.lambda" factoryName="Remote" nameIsGenerated="true">
+      <option name="credentialProviderId" value="profile:AdminUser" />
+      <option name="regionId" value="us-east-1" />
+      <option name="functionName" value="aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" />
+      <option name="input" value="{}" />
+      <option name="inputIsFile" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="[Remote] aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" type="aws.lambda" factoryName="Remote" nameIsGenerated="true">
+      <option name="credentialProviderId" value="profile:AdminUser" />
+      <option name="regionId" value="us-east-1" />
+      <option name="functionName" value="aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" />
+      <option name="input" value="{}" />
+      <option name="inputIsFile" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="[Remote] lambda-hw-uploads-batch-notifier (2)" type="aws.lambda" factoryName="Remote" temporary="true" nameIsGenerated="true">
+      <option name="credentialProviderId" value="profile:AdminUser" />
+      <option name="regionId" value="us-east-1" />
+      <option name="functionName" value="aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" />
+      <option name="input" value="{}" />
+      <option name="inputIsFile" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="[Remote] lambda-hw-uploads-batch-notifier" type="aws.lambda" factoryName="Remote" temporary="true" nameIsGenerated="true">
+      <option name="credentialProviderId" value="profile:AdminUser" />
+      <option name="regionId" value="us-east-1" />
+      <option name="functionName" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="arn:aws:lambda:us-east-1:138371334384:function:aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" type="aws.lambda" factoryName="Remote">
+      <option name="credentialProviderId" value="profile:AdminUser" />
+      <option name="regionId" value="us-east-1" />
+      <option name="functionName" value="aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" type="aws.lambda" factoryName="Remote" temporary="true">
+      <option name="credentialProviderId" value="profile:AdminUser" />
+      <option name="regionId" value="us-east-1" />
+      <option name="functionName" />
+      <option name="input" value="{}" />
+      <option name="inputIsFile" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="AWS Lambda." />
+      <item itemvalue="AWS Lambda.[Local] HelloWorldFunction" />
+      <item itemvalue="AWS Lambda.[Local] NotificationUploadFunction" />
+      <item itemvalue="AWS Lambda.[Remote] aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" />
+      <item itemvalue="AWS Lambda.arn:aws:lambda:us-east-1:138371334384:function:aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" />
+      <item itemvalue="AWS Lambda.[Remote] lambda-hw-uploads-batch-notifier" />
+      <item itemvalue="AWS Lambda.[Remote] lambda-hw-uploads-batch-notifier (2)" />
+      <item itemvalue="AWS Lambda.aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="AWS Lambda.[Remote] lambda-hw-uploads-batch-notifier" />
+        <item itemvalue="AWS Lambda.[Remote] lambda-hw-uploads-batch-notifier (2)" />
+        <item itemvalue="AWS Lambda.aws-cicdhw-stack-NotificationUploadFunction-Wd7sKVBGvP4b" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e53c0b2-309e-4068-b47b-fafe175b3932" name="Changes" comment="" />
+      <created>1682002912491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682002912491</updated>
+      <workItem from="1682002913932" duration="9051000" />
+      <workItem from="1682067160727" duration="15809000" />
+      <workItem from="1682943538088" duration="13268000" />
+      <workItem from="1683548657862" duration="29106000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

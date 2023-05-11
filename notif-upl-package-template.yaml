@@ -1,0 +1,32 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'aws-lambda-hw
+
+  Sample SAM Template for aws-lambda-hw
+
+  '
+Globals:
+  Function:
+    Timeout: 20
+    MemorySize: 128
+Resources:
+  NotificationUploadFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: s3://aws-sam-cli-managed-default-samclisourcebucket-9pey3jat4ztf/04ffbc668c3cd96a2400962e468b2cd7
+      Handler: helloworld.NotificationUploader::handleRequest
+      Runtime: java11
+      Role: arn:aws:iam::138371334384:role/sqs-sns-for-lambda-hw
+      Architectures:
+      - x86_64
+      MemorySize: 512
+      Environment:
+        Variables:
+          queueUrl: https://sqs:us-east-1:amazonaws:com/138371334384/-uploads-nitification-queue
+          topicArn: arn:aws:sns:us-east-1:138371334384:-upload-notification-topic
+          JAVA_TOOL_OPTIONS: -XX:+TieredCompilation -XX:TieredStopAtLevel=1
+      AutoPublishAlias: live
+      DeploymentPreference:
+        Type: AllAtOnce
+    Metadata:
+      SamResourceId: NotificationUploadFunction
