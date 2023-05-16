@@ -14,7 +14,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - aws-lambda-hw % sam package --template-file template.yaml --s3-bucket andrii-tutyk-cicd-hw  --output-template-file output-template.yaml
+      - aws cloudformation package package --template-file template.yaml --s3-bucket andrii-tutyk-cicd-hw  --output-template-file output-template.yaml
 artifacts:
   files:
     - target/HelloWorld-1.0.jar
