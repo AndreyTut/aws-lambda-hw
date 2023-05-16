@@ -17,4 +17,4 @@ phases:
       - aws cloudformation package --template-file template.yaml --s3-bucket andrii-tutyk-cicd-hw  --output-template-file output-template.yaml
 artifacts:
   files:
-    - target/HelloWorld-1.0.jar
+    - output-template.yaml
